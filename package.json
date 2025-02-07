@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node ./node_modules/parcel-bundler/bin/cli serve ./src/index.html --port 8080",
     "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.html --out-dir ./dist/",
-    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,7 @@
     "eslint-plugin-import": "^2.31.0",
     "gh-pages": "^6.3.0",
     "parcel-bundler": "^1.12.5"
-  }
+  },
+  "homepage": "https://gitclaud.github.io/website"
+
 }
