@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "A JavaScript project",
+  "description": "Max Hübl",
   "main": "./dist/index.js",
   "scripts": {
     "start": "node ./node_modules/parcel-bundler/bin/cli serve ./src/index.html --port 8080",

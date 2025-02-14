@@ -124,7 +124,8 @@ function counter() {
   var seconds = 0;
   setInterval(function () {
     seconds += 1;
-    document.getElementById('app').innerHTML = "<p>You have been here for ".concat(seconds, " seconds.</p>");
+    //document.getElementById('app').innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
+    document.getElementById('app').innerHTML = "<p>Cute Fotografie</p>";
   }, 1000);
 }
 counter();
@@ -153,7 +154,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61200" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52524" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
